@@ -1,0 +1,9 @@
+<j:jelly xmlns:j="jelly:core" xmlns:st="jelly:stapler" xmlns:d="jelly:define" xmlns:l="/lib/layout" xmlns:t="/lib/hudson" xmlns:f="/lib/form">
+	<f:entry field="testConfigCmd" title="${%Shell}">
+      	<f:textarea class="fixed-width" style="resize: vertical;"  />
+    </f:entry>
+</j:jelly>
+<!--
+codemirror-mode="shell"
+            codemirror-config="mode: 'text/x-sh', lineNumbers: true, matchBrackets: true"
+ -->
