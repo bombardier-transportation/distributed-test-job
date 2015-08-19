@@ -23,7 +23,9 @@ SOFTWARE.
 -->
 
 <?jelly escape-by-default='true'?>
-<!-- This view is used to render the installed plugins page. -->
+<!-- 
+	Container for the short description on the Job type.
+-->
 <div>
-  Defines a new type of Job that will executes test in a distributed environment.
+  ${%testJobDesc}
 </div>
