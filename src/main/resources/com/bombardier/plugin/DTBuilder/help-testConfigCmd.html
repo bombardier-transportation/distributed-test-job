@@ -22,8 +22,49 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 -->
 
-<?jelly escape-by-default='true'?>
-<!-- This view is used to render the installed plugins page. -->
 <div>
-  Defines a new type of Job that will executes test in a distributed environment.
+    Here you should type the shell script that will be executed on the Slave machines.
+    The script will be executed from the "home" directory of the user on the remote machine.
+    <br />
+	<table>
+		<thead>
+			<tr>
+				<th colspan="2">Available variables:</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>
+					<span>$TEST_ENV</span>
+				</td>
+				<td>
+					<p>- Specifies the location of the test environment directory on the Slave machines.</p>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<span>$TEST_WS</span>
+				</td>
+				<td>
+					<p>- Specifies the location of the project workspace directory inside the Jenkins root directory.</p>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<span>$TARGET_SCRIPT</span>
+				</td>
+				<td>
+					<p>- Specifies the location of the target script.</p>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<span>$TEST_LIST</span>
+				</td>
+				<td>
+					<p>- Specifies the location of the Test Case List (auto generated for each Slave).</p>
+				</td>
+			</tr>
+		</tbody>
+	</table>
 </div>

@@ -1,7 +1,0 @@
-<?jelly escape-by-default='true'?>
-<!-- 
-	Container for the short description on the Job type.
--->
-<div>
-  ${%testJobDesc}
-</div>

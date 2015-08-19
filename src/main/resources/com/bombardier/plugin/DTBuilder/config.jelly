@@ -22,8 +22,12 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 -->
 
-<?jelly escape-by-default='true'?>
-<!-- This view is used to render the installed plugins page. -->
-<div>
-  Defines a new type of Job that will executes test in a distributed environment.
-</div>
+<j:jelly xmlns:j="jelly:core" xmlns:st="jelly:stapler" xmlns:d="jelly:define" xmlns:l="/lib/layout" xmlns:t="/lib/hudson" xmlns:f="/lib/form">
+	<f:entry field="testConfigCmd" title="${%Shell}">
+      	<f:textarea class="fixed-width" style="resize: vertical;"  />
+    </f:entry>
+</j:jelly>
+<!--
+codemirror-mode="shell"
+            codemirror-config="mode: 'text/x-sh', lineNumbers: true, matchBrackets: true"
+ -->
